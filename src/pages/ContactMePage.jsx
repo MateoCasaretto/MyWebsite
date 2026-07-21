@@ -3,7 +3,7 @@ import ContactMeFormComponente from '../features/components/ContactMeFormCompone
 
 const ContactMePage = () => {
   return (
-    <div className="contact-page">
+    <div className="contact-page" id="contact">
       <ContactMeFormComponente />
     </div>
   )

@@ -16,7 +16,7 @@ const ProyectsPage = () => {
             })
     }, [])
   return (
-    <div className="proyects-page">
+    <div className="proyects-page" id="projects">
         <h2 className="proyects-title">PROJECTS</h2>
         <div className="proyects-grid">
             {proyects.map((p) => <ProyectCard key={p.id} proyect={p} />)}

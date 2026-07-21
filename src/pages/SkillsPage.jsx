@@ -18,7 +18,7 @@ const skills = [
 
 const SkillsPage = () => {
   return (
-    <div className="skills-page">
+    <div className="skills-page" id="skills">
       <h2 className="skills-title">WHAT I DO</h2>
       <p className="skills-description">
         Full-stack developer with a broad range of skills across frontend, backend, and everything in between.

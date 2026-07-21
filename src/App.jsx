@@ -3,12 +3,12 @@ import ContactMePage from './pages/ContactMePage'
 import FooterComponent from './features/components/FooterComponent'
 import ProyectsPage from './pages/ProyectsPage'
 import SkillsPage from './pages/SkillsPage'
-import ThemeToggleComponent from './features/components/ThemeToggleComponent'
+import NavBarComponent from './features/components/NavBarComponent'
 
 function App() {
   return (
     <>
-      <ThemeToggleComponent />
+      <NavBarComponent />
       <HomePage />
       <SkillsPage />
       <ProyectsPage/>

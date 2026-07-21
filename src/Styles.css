@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
 :root {
   --color-bg: #ffffff;
   --color-text: #111111;
@@ -35,11 +40,46 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.theme-toggle-button {
+.navbar {
   position: fixed;
-  top: 1.5rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar-link:hover {
+  color: var(--color-text-muted);
+}
+
+.theme-toggle-button {
+  position: absolute;
   right: 1.5rem;
-  z-index: 100;
+  top: 50%;
+  transform: translateY(-50%);
   width: 2.5rem;
   height: 2.5rem;
   display: flex;
@@ -65,7 +105,7 @@ body {
   justify-content: center;
   gap: 5rem;
   min-height: 85vh;
-  padding: 2rem;
+  padding: 6rem 2rem 2rem;
   flex-wrap: wrap;
 }
 

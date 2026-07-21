@@ -16,7 +16,7 @@ const AboutMeComponent = () => {
         <a className="download-cv-button" href="/cv.pdf" download>
           Download CV
         </a>
-        <a className="see-projects-button" href="/cv.pdf">
+        <a className="see-projects-button" href="#projects">
           See Projects
         </a>
       </div>
